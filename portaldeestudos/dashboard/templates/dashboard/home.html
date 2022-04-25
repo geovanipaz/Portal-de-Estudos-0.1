@@ -1,0 +1,130 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notas
+            </h5>
+            Crie Notas para consultá-las posteriormente.
+             Eles são armazenados permanentemente até serem excluídos
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Tarefas
+            </h5>
+            Adicione tarefas e atribua prazos a eles.
+             Eles serão exibidos priorizados por prazos
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Youtube
+            </h5>
+            Procure videos que desejar no Youtube
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Fazer
+            </h5>
+            Adicione suas listas de coisas a fazer para o seu dia e remova-as ao terminar
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="#">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Livros
+            </h5>
+            Procure livros em uma lista de menus de livros bem organizados
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Dicionario
+            </h5>
+            Um vocabulário de um livro está incomodando você? Sem problemas, digite a palavra e o significado será exibido
+             quase instantaneamente.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              WikiPedia
+            </h5>
+            Tarefas de casa e tarefas? Pesquise na wikipedia para obter resultados rápidos
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Conversão
+            </h5>
+            Confira a tabela de conversão, que ajuda você a converter as medidas em medidas mais familiares de sua escolha.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
