@@ -7,11 +7,12 @@
     <div class="row">
         {% for nota in notas %}
         <div class="col-md-3">
-            <a href="#">
+            <a href="{% url 'detalhe_nota' nota.id %}">
                 <div class="card">
                     <div class="card-header">{{nota.titulo}}</div>
                     <div class="card-body">{{nota.descricao}}</div>
-                    <div class="card-footer mt-auto "><a href="#">
+                    <div class="card-footer mt-auto ">
+                        <a href="{% url 'deleta_nota' nota.id %}">
                         <i class="fa fa-trash fa-2x"></i></a>
                     </div>
                 </div>

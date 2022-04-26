@@ -14,3 +14,15 @@ class Notas(models.Model):
         
     def __str__(self) -> str:
         return self.titulo
+    
+class Tarefa(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    sujeito = models.CharField(max_length=50)
+    titulo = models.CharField(max_length=100)
+    descricao = models.TextField()
+    prazo = models.DateTimeField()
+    ja_finalizada = models.BooleanField(default=False)
+    
+    def __str__(self) -> str:
+        return self.titulo
+    
