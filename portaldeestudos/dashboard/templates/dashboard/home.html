@@ -8,7 +8,7 @@
   <hr> <br>
   <div class="row">
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'notas' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'tarefas' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/homework.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -37,7 +37,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'youtube' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/youtube.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -50,7 +50,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'fazer' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -66,7 +66,7 @@
   <br><br><br>
   <div class="row">
     <div class="col-md-3 ">
-      <a href="#">
+      <a href="{% url 'livros' %}">
         <div class="card mt-20">
           <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -83,7 +83,7 @@
 
     <div class="col-md-3">
       <a href="#">
-        <div class="card">
+        <div class="{% url 'dicionario' %}">
           <img class="card-img-top" src="{% static 'images/dictionary.jpg' %}" alt="Notes image">
           <div class="card-body">
             <h5 class="card-title ">
@@ -96,7 +96,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'wiki' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
           <div class="card-body">
@@ -111,7 +111,7 @@
 
 
     <div class="col-md-3">
-      <a href="#">
+      <a href="{% url 'conversao' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="Notes image">
           <div class="card-body">

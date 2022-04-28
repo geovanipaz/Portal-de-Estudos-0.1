@@ -26,3 +26,11 @@ class Tarefa(models.Model):
     def __str__(self) -> str:
         return self.titulo
     
+class Fazer(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    titulo = models.CharField(max_length=100)
+    ja_finalizada = models.BooleanField(default=False)
+    
+    def __str__(self) -> str:
+        return self.titulo
+    
